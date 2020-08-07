@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import style from "./BookList.module.css";
-// import Book from "../Book/Book";
 import { data } from "../data";
 import Category from "../Category/Category";
 
@@ -24,7 +23,7 @@ class BookList extends Component {
   setErrorContaiber = (item) => {
     this.setState({ isDublicateItem: item });
     setTimeout(() => {
-      this.setState({ isDublicateItem: '' });
+      this.setState({ isDublicateItem: "" });
     }, 2000);
   };
 
@@ -71,12 +70,12 @@ class BookList extends Component {
             const { bookName, bookImage } = dataBooks;
             return bookNames.map((myBooks) => {
               if (myBooks === bookName) {
-                return  (
+                return (
                   <div className={style.myShelf}>
-                  <div>{bookName}</div>
-                  <img src={bookImage} alt='someImage' />
+                    <div>{bookName}</div>
+                    <img src={bookImage} alt="someImage" />
                   </div>
-                )
+                );
               }
             });
           });
@@ -103,11 +102,8 @@ class BookList extends Component {
       isDublicateItem,
       myShelf: { categoryName },
     } = this.state;
-    //console.log("bookName -> ", bookName);
     return (
       <div className={style.list}>
-        {/* <h1>OUR SHELF</h1> */}
-        {/* {this.renderMyShelf(categoryName)} */}
         <h1>CHECK OUR BOOKS</h1>
         <div className={style.main}>
           {books.map((bookProps, index) => {
