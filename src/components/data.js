@@ -61,11 +61,12 @@ export const data = [
     categoryName: "Thriller",
     books: [
       {
-        bookName: "Название книги 7",
+        bookName: "Gone with the Wind",
         bookImage:
           "https://www.boabooks.com/files/gimgs/365_boabooks_marius_margot_06000.jpg",
-        author: "Name",
-        description: "Lorem12",
+        author: "Margaret Mitchell",
+        description:
+          "Scarlett O'Hara, the beautiful, spoiled daughter of a well-to-do Georgia plantation owner, must use every means at her disposal to claw her way out of the poverty she finds herself in after Sherman's March to the Sea.",
       },
       {
         bookName: "Watchmen",
