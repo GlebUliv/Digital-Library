@@ -72,7 +72,9 @@ class BookList extends Component {
               if (myBooks === bookName) {
                 return (
                   <div className={style.myShelf}>
-                    <div>{bookName}</div>
+                    <div>
+                      <h3>{bookName}</h3>
+                    </div>
                     <img src={bookImage} alt="someImage" />
                   </div>
                 );
